@@ -1,0 +1,28 @@
+This is a mirror of http://www.vim.org/scripts/script.php?script_id=339
+
+Based intially on Gavin Sinclair's Java script (vimscript #266), these are mappings to facilitate coding in VBScript ASP.
+
+Examples of use:
+
+To get:
+<%
+Response.Write "SomeText"
+%>
+In insert mode you type:
+,%,r,wSomeText
+
+To get:
+If Trim(Request.QueryString("option")) then
+End If
+In insert mode you type:
+:i<Ctrl+f>t,R,qoption
+
+You have:
+strOption = Request("option")
+And you want:
+strOption = Trim(Request("option"))
+You mark Request("option") in visual mode and press <Ctrl+f>t
+
+
+
+I will be adding more soon.
